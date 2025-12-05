@@ -1,0 +1,458 @@
+{
+    "Endpoint": {
+        "Cockpit": [
+            {
+                "name": "cockpit",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "mileage": "totalMileage"
+                    }
+                }
+            },
+            {
+                "name": "battery-status",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "autonomy": "batteryAutonomy",
+                        "remaining": "batteryLevel",
+                        "plugged": "plugStatus",
+                        "charge_status": "chargingStatus",
+                        "charge_left": "chargingRemainingTime",
+                        "V2L": "V2L_SystemStatusDisplay",
+                        "timestamp": "timestamp"
+                    }
+                }
+            }
+        ],
+        "Location": [
+            {
+                "name": "location",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "latitude": "gpsLatitude",
+                        "longitude": "gpsLongitude",
+                        "timestamp": "lastUpdateTime"
+                    }
+                }
+            }
+        ],
+        "BatteryStatus": [
+            {
+                "name": "battery-status",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "autonomy": "batteryAutonomy",
+                        "remaining": "batteryLevel",
+                        "plugged": "plugStatus",
+                        "charge_status": "chargingStatus",
+                        "charge_left": "chargingRemainingTime",
+                        "V2L": "V2L_SystemStatusDisplay",
+                        "timestamp": "timestamp"
+                    }
+                }
+            }
+        ],
+        "LockStatus": [
+            {
+                "name": "lock-status",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 404,
+                    "path": "data/attributes",
+                    "dictionary": {}
+                }
+            }
+        ],        
+        "Charges": [
+            {
+                "name": "charges",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes/charges",
+                    "dictionary": {
+                        "recovered": "chargeEnergyRecovered",
+                        "start_level": "chargeStartBatteryLevel",
+                        "start_date": "chargeStartDate",
+                        "end_level": "chargeEndBatteryLevel",
+                        "end_date": "chargeEndDate",
+                        "end_status": "chargeEndStatus",
+                        "duration": "chargeDuration"
+                    }
+                }
+            }
+        ],
+        "ChargeSchedule": [
+            {
+                "name": "charge-schedule",
+                "version": 2,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 405,
+                    "path": "data/attributes",
+                    "dictionary": {}
+                }
+            }
+        ],
+        "EVLevels": [
+            {
+                "name": "ev/soc-levels",
+                "version": 1,
+                "adapter": "kcm",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "min": "socMin",
+                        "max": "socTarget",
+                        "timestamp": "lastEnergyUpdateTimestamp"
+                    }
+                }
+            }
+        ],
+        "EVSettings": [
+            {
+                "name": "ev/settings",
+                "version": 1,
+                "adapter": "kcm",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "mode": "chargeModeRq",
+                        "start": "chargeTimeStart",
+                        "duration": "chargeDuration",
+                        "hvac": "preconditioningTemperature",
+                        "steering_wheel": "preconditioningHeatedStrgWheel",
+                        "right_seat": "preconditioningHeatedRightSeat",
+                        "left-seat": "preconditioningHeatedLeftSeat"
+                    }
+                }
+            }
+        ],
+        "EVPrograms": [
+            {
+                "name": "ev/settings",
+                "version": 1,
+                "adapter": "kcm",
+                "response": {
+                    "code": 200,
+                    "path": "programs",
+                    "dictionary": {
+                        "status": "programActivationStatus",
+                        "type": "programType",
+                        "start": "programDepartureTime",
+                        "monday": "programActivationMonday",
+                        "tuesday": "programActivationTuesday",
+                        "wednesday": "programActivationWednesday",
+                        "thursday": "programActivationThursday",
+                        "friday": "programActivationFriday",
+                        "saturday": "programActivationSaturday",
+                        "sunday": "programActivationSunday"
+                    }
+                }
+            }
+        ],
+        "HvacStatus": [
+            {
+                "name": "hvac-status",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "status": "hvacStatus",
+                        "threshold": "socThreshold",
+                        "temperature": "internalTemperature",
+                        "outside": "externalTemperature",
+                        "timestamp": "lastUpdateTime"
+                    }
+                }
+            },
+            {
+                "name": "ev/settings",
+                "version": 1,
+                "adapter": "kcm",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "setpoint": "preconditioningTemperature"
+                    }
+                }
+            }
+        ],
+        "HvacSettings": [
+            {
+                "name": "hvac-settings",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "timestamp": "dateTime"
+                    }
+                }
+            }
+        ]
+    },
+    "Action": {
+        "Horn": {
+            "name": "actions/horn-lights",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                },
+                {
+                    "key": "target",
+                    "value": "horn"
+                }
+            ],
+            "response": {
+                "code": 200
+            }
+        },
+        "Lights": {
+            "name": "actions/horn-lights",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                },
+                {
+                    "key": "target",
+                    "value": "lights"
+                }
+            ],
+            "response": {
+                "code": 200
+            }
+        },
+        "HornAndLights": {
+            "name": "actions/horn-lights",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                },
+                {
+                    "key": "target",
+                    "value": "horn_lights"
+                }
+            ],
+            "response": {
+                "code": 200
+            }
+        },
+        "RefreshLocation": {
+            "name": "actions/refresh-location",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {
+                "code": 200
+            }
+        },
+        "SendNavigation": {
+            "name": "actions/refresh-location",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {}
+        },
+        "RefreshBatteryStatus": {
+            "name": "actions/refresh-battery-status",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {}
+        },
+        "ChargeMode": {
+            "name": "actions/charge-mode",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {}
+        },
+        "ChargeSchedule": {
+            "name": "actions/charge-schedule",
+            "version": 2,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {}
+        },
+        "ChargingStart": {
+            "name": "actions/charging-start",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                }
+            ],
+            "response": {
+                "code": 405
+            }
+        },
+        "ChargingStop": {
+            "name": "actions/charging-start",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "stop"
+                }
+            ],
+            "response": {
+                "code": 405
+            }
+        },
+        "EVSettings": {
+            "name": "actions/charge-settings",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {}
+        },
+        "ChargeSettings": {
+            "name": "actions/charge-settings",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {}
+        },
+        "ChargeStart": {
+            "name": "charge/pause-resume",
+            "version": 1,
+            "adapter": "kcm",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "resume"
+                }
+            ]
+        },
+        "ChargeStop": {
+            "name": "charge/pause-resume",
+            "version": 1,
+            "adapter": "kcm",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "pause"
+                }
+            ],
+            "response": {}
+        },
+        "HvacRefreshStatus": {
+            "name": "actions/hvac-refresh-hvac-status",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {
+                "code": 405
+            }
+        },
+        "HvacSettings": {
+            "name": "actions/hvac-settings",
+            "version": 2,
+            "code": 404,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "mode",
+                    "value": "%"
+                },
+                {
+                    "key": "socThreshold",
+                    "value": "%"
+                }
+            ],
+            "response": {}
+        },
+        "HvacSchedule": {
+            "name": "actions/hvac-schedule",
+            "version": 2,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {}
+        },
+        "HvacStart": {
+            "name": "actions/hvac-start",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                },
+                {
+                    "key": "targetTemperature",
+                    "value": "%"
+                }
+            ],
+            "response": {
+                "code": 200
+            }
+        },
+        "HvacStop": {
+            "name": "actions/hvac-start",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "cancel"
+                }
+            ],
+            "response": {
+                "code": 200
+            }
+        },
+        "HvacThreshold": {
+            "name": "actions/hvac-settings",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                },
+                {
+                    "key": "socThreshold",
+                    "value": "%"
+                }
+            ],
+            "response": {}
+        }
+    }
+}

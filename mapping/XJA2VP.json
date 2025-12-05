@@ -1,0 +1,120 @@
+{
+    "Endpoint": {
+        "Cockpit": [
+            {
+                "name": "cockpit",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "autonomy": "fuelAutonomy",
+                        "remaining": "fuelQuantity",
+                        "mileage": "totalMileage"
+                    }
+                }
+            }
+        ],
+        "Location": [
+            {
+                "name": "location",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 200,
+                    "path": "data/attributes",
+                    "dictionary": {
+                        "latitude": "gpsLatitude",
+                        "longitude": "gpsLongitude",
+                        "timestamp": "lastUpdateTime"
+                    }
+                }
+            }
+        ],
+        "LockStatus": [
+            {
+                "name": "lock-status",
+                "version": 1,
+                "adapter": "kca/car-adapter",
+                "response": {
+                    "code": 404,
+                    "path": "data/attributes",
+                    "dictionary": {}
+                }
+            }
+        ]              
+    },
+    "Action": {
+        "Horn": {
+            "name": "actions/horn-lights",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                },
+                {
+                    "key": "target",
+                    "value": "horn"
+                }
+            ],
+            "response": {
+                "code": 403
+            }
+        },
+        "Lights": {
+            "name": "actions/horn-lights",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                },
+                {
+                    "key": "target",
+                    "value": "lights"
+                }
+            ],
+            "response": {
+                "code": 403
+            }
+        },
+        "HornAndLights": {
+            "name": "actions/horn-lights",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [
+                {
+                    "key": "action",
+                    "value": "start"
+                },
+                {
+                    "key": "target",
+                    "value": "horn_lights"
+                }
+            ],
+            "response": {
+                "code": 403
+            }
+        },
+        "RefreshLocation": {
+            "name": "actions/refresh-location",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {
+                "code": 200
+            }
+        },
+        "SendNavigation": {
+            "name": "actions/refresh-location",
+            "version": 1,
+            "adapter": "kca/car-adapter",
+            "payload": [],
+            "response": {}
+        } 
+    }
+}

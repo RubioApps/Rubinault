@@ -1,0 +1,6 @@
+{
+    "require": {
+        "james-heinrich/getid3": "^1.9",
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}
