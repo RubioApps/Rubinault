@@ -36,7 +36,7 @@ defined('_RBNOEXEC') or die;
 class RbnoConfig
 {
         public $sitename        = 'Rubinault';
-        public $live_site       = 'https://famillerubio.com/rubinault';
+        public $live_site       = 'https://mywebsite.com/rubinault';
         public $log_path        = '/var/www/rubinault/log';
         public $tmp_path        = '/var/www/rubinault/tmp';
         public $debug           = false;
