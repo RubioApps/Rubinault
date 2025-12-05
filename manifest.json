@@ -3,20 +3,20 @@
   "background_color": "#262A33",
   "icons": [
     {
-      "src": "https://famillerubio.com/rubinault/templates/default/assets/favicons/rubinault.png",
+      "src": "https://mywebsite.com/rubinault/templates/default/assets/favicons/rubinault.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "https://famillerubio.com/rubinault/templates/default/assets/favicons/screenshot.png",
+      "src": "https://mywebsite.com/rubinault/templates/default/assets/favicons/screenshot.png",
       "type": "image/png",
       "sizes": "766x420",
       "form_factor": "wide"
     },
     {
-      "src": "https://famillerubio.com/rubinault/templates/default/assets/favicons/screenshot2.png",
+      "src": "https://mywebsite.com/rubinault/templates/default/assets/favicons/screenshot2.png",
       "type": "image/png",
       "sizes": "320x500"
     }    
@@ -27,8 +27,8 @@
   "lang": "fr-FR",
   "name": "Rubinault",
   "short_name": "Rubinault",
-  "start_url": "https://famillerubio.com/rubinault",
-  "scope": "https://famillerubio.com/rubinault",
+  "start_url": "https://mywebsite.com/rubinault",
+  "scope": "https://mywebsite.com/rubinault",
   "description": "Voitures de la famille Rubio",
-  "id": "https://famillerubio.com/rubinault"
+  "id": "https://mywebsite.com/rubinault"
 }
