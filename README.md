@@ -64,6 +64,18 @@ class RbnoConfig
         ];            
 }
 ```
+## Installation
+Clone or unzip the content of Rubinault into the folder where your webserver points. 
+To make it run conveniently, you have to install some additional PHP components via composer.
+- Guzzle Http. See https://github.com/guzzle/guzzle for further info
+
+Rubniault uses some open source prototypes like 
+- jQuery (https://jquery.com)
+- Leaflet (https://leafletjs.com)
+- Bootstrap (https://getbootstrap.com)
+
+so take this into account when you setup the HTST settings of your website.
+
 ## Screenshots
 <img width="953" height="585" alt="image" src="https://github.com/user-attachments/assets/b1d10e91-2a42-45fe-84d1-7aa0bfcca2b4" />
 <img width="957" height="595" alt="image" src="https://github.com/user-attachments/assets/144163a4-bfff-4e43-946a-ff7cb0c54b81" />
