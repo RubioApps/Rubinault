@@ -64,6 +64,14 @@ class RbnoConfig
         ];            
 }
 ```
+## Screenshots
+<img width="953" height="585" alt="image" src="https://github.com/user-attachments/assets/b1d10e91-2a42-45fe-84d1-7aa0bfcca2b4" />
+<img width="957" height="595" alt="image" src="https://github.com/user-attachments/assets/144163a4-bfff-4e43-946a-ff7cb0c54b81" />
+<img width="957" height="595" alt="image" src="https://github.com/user-attachments/assets/c15bc331-a274-453c-80fd-a3edc5b04497" />
+<img width="957" height="595" alt="image" src="https://github.com/user-attachments/assets/fe717630-fea1-49a0-945e-7c01e25b59ab" />
+<img width="957" height="595" alt="image" src="https://github.com/user-attachments/assets/b13172ff-0737-4618-acee-cac850e8c6d8" />
+<img width="957" height="595" alt="image" src="https://github.com/user-attachments/assets/3bc60959-825a-4196-8ecc-bccb4857cf70" />
+
 
 
 
