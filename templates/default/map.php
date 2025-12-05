@@ -128,24 +128,6 @@ use Rubinault\Framework\Language\Text;
                 });
             });
 
-            /*
-            const destination = {
-                'downloadTrafficInfo': false,
-                'destinations': [{
-                    'id': 1,
-                    'latitude': 42,
-                    'longitude': 12,
-                    'calculationCondition': 0,
-                    'locationType': 'POI',
-                    'name': 'Maison',
-                    'latitudeMode': 0,
-                    'longitudeMode': 0
-                }]
-            };
-            $('[data-endpoint=send-navigation').data('payload', destination);
-            $.rbno.kamereon($('.command'));
-            */   
-
         } else {
             console.log('<?= addslashes($page->data->error); ?>');
             $.rbno.toast('<?= Text::_($page->data->error, true); ?>', true);
