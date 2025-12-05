@@ -577,19 +577,4 @@ class Kamereon
         }
     }
 }
-/*
-{
-    "type":"FUNCTIONAL",
-    "messages":[
-        {
-            "code":"err.func.access.denied.for.this.resource",
-            "message":"{\"errors\":[{\"errorCode\":\"400900\",\"errorMessage\":\"Validation error on sendNavigationRequest, field 'destinations': must not be empty\",\"errorLevel\":\"error\",\"errorType\":\"functional\"}],\"error_reference\":\"46a033bc-e8e9-4c9d-aae3-c6c6912b80da3613609\"}"
-        }],
-    "errors":[
-        {
-            "errorCode":"err.func.access.denied.for.this.resource",
-            "errorMessage":"{\"errors\":[{\"errorCode\":\"400900\",\"errorMessage\":\"Validation error on sendNavigationRequest, field 'destinations': must not be empty\",\"errorLevel\":\"error\",\"errorType\":\"functional\"}],\"error_reference\":\"46a033bc-e8e9-4c9d-aae3-c6c6912b80da3613609\"}"
-        }],
-    "error_reference":"FUNCTIONAL"
-}
-    */
+
